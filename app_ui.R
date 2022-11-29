@@ -9,7 +9,7 @@ library("rsconnect")
 df<- read.csv("./data/owid-co2-data.csv")
 
 intro_view <- tabPanel(
-  "introduction",
+  "Introduction",
   h1(strong("Global Warming Cause")),
   img("", src = "https://cdn.vox-cdn.com/thumbor/8etKO18iyGNYMjYcaOQXZbC5jv0=/3000x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/13439425/shutterstock_285980522.jpg",
       width = "600", height = "300", align = "center"),
