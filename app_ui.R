@@ -1,4 +1,3 @@
-library("shiny")
 library("dplyr")
 library("tidyverse")
 library("ggplot2")
@@ -16,7 +15,7 @@ intro_view <- tabPanel(
   p("In the post-industrial era (1850-1900), humans started burning fossil fuels, which increased levels of heat-trapping greenhouse gases in Earth's atmosphere, resulting in long-term warming of Earth's surface.
     The one of the main causes is releasing too much carbon dioxide. Because carbon dioxide in the atmosphere warms the planet, causing climate change. Nowdays, the majority of countries in the world keep releasing 
     untold amount of carbon dioxide. Getting know what the cause of global warming is really important task to figure out the solution"),
-  h2(strong("Data Anaysis")),
+  h2(strong("Data Analysis")),
   p("The United States co2 in average: ", us_co2),
   p("The United States co2 in 2020: ", us_co2_2020),
   p("The World average c02 before 2000: ", world_avg_co2_before_2000),
