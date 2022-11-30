@@ -1,16 +1,14 @@
-library("dplyr")
-library("tidyverse")
-library("ggplot2")
-library("plotly")
-library("rsconnect")
-
-# loading dataset
-df<- read.csv("./data/owid-co2-data.csv")
+# library("shiny")
+# library("dplyr")
+# library("tidyverse")
+# library("ggplot2")
+# library("plotly")
+# library("rsconnect")
 
 intro_view <- tabPanel(
   "Introduction",
   h1(strong("Global Warming Cause")),
-  img("", src = "https://cdn.vox-cdn.com/thumbor/8etKO18iyGNYMjYcaOQXZbC5jv0=/3000x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/13439425/shutterstock_285980522.jpg",
+  img("", src = "https://cdn.vox-cdn.com/uploads/chorus_asset/file/13439425/shutterstock_285980522.jpg",
       width = "600", height = "300", align = "center"),
   p("In the post-industrial era (1850-1900), humans started burning fossil fuels, which increased levels of heat-trapping greenhouse gases in Earth's atmosphere, resulting in long-term warming of Earth's surface.
     The one of the main causes is releasing too much carbon dioxide. Because carbon dioxide in the atmosphere warms the planet, causing climate change. Nowdays, the majority of countries in the world keep releasing 
@@ -19,9 +17,7 @@ intro_view <- tabPanel(
   p("The United States co2 in average: ", us_co2),
   p("The United States co2 in 2020: ", us_co2_2020),
   p("The World average c02 before 2000: ", world_avg_co2_before_2000),
-  p("The World average c02 after 2000: ", world_avg_co2_after_2000)
 )
-
 chart_view <- tabPanel(
   "Carbon Dioxide",
   h1(strong("CO2 per country")),
