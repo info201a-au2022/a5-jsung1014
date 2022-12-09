@@ -39,9 +39,11 @@ server <- function(input, output){
   }
   output$chart <- renderPlotly({
     ggplotly(ggplot(plot(input$country & input$year),aes(x= `year`, y= `co2`)) +
-               geom_line(color = "red") +
-               labs(title = "The Amount Of Use Of Carbon Dioxide", x = "year", y = "Carbon Dioxide(co2)"))
-    
+               geom_bar(stat = "identity", fill = "red") +
+               xlab("year") + 
+               ylab("Carbon Dioxide(co2)") + 
+               ggtitle("The Amount of Use of Carbon Dioxide"))
+
   })
 }
 
