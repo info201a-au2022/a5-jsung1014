@@ -50,11 +50,30 @@ chart_view <- tabPanel(
   )
 )
 
+reference_view <- tabPanel(
+  "Reference",
+  h3(strong("Image")),
+  hr(),
+  p("https://shiny.rstudio.com/articles/images.html"),
+  br(),
+  
+  h3(strong("Convert ggplot to ggplotly")),
+  hr(),
+  p("https://stackoverflow.com/questions/37663854/convert-ggplot-object-to-plotly-in-shiny-application"),
+  br(),
+  
+  h3(strong("How to make slider widget")),
+  hr(),
+  p("https://shiny.rstudio.com/articles/sliders.html")
+)
+
+
 # Define UI
 ui <- navbarPage(
   "Global Warming Cause",
   theme = shinythemes::shinytheme("cyborg"),
   intro_view,
-  chart_view
+  chart_view,
+  reference_view
 )
 
