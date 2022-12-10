@@ -5,7 +5,10 @@ account: jsung1014
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7776096
-bundleId: 6574699
+bundleId: 6617932
 url: https://jsung1014.shinyapps.io/a5-jsung1014/
-when: 1669848866.4541
-lastSyncTime: 1669848866.45412
+when: 1670626133.42054
+lastSyncTime: 1670626133.42055
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: image/.DS_Store|image/Screen Shot 2022-11-29 at 10.54.29 AM.png|image/Screen Shot 2022-11-29 at 10.56.38 AM.png|LICENSE|README.md
